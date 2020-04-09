@@ -25,4 +25,5 @@ target 'OpenSourceCollectionReview' do
 	pod 'Siren'
 	pod 'QMUIKit'
 	pod 'GPUImage'
+	pod 'Realm'
 end

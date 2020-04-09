@@ -933,6 +933,9 @@ PODS:
   - R.swift (5.1.0):
     - R.swift.Library (~> 5.1.0)
   - R.swift.Library (5.1.0)
+  - Realm (4.4.0):
+    - Realm/Headers (= 4.4.0)
+  - Realm/Headers (4.4.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -958,6 +961,7 @@ DEPENDENCIES:
   - Moya
   - QMUIKit
   - R.swift
+  - Realm
   - RxCocoa
   - RxSwift
   - Siren
@@ -987,6 +991,7 @@ SPEC REPOS:
     - QMUIKit
     - R.swift
     - R.swift.Library
+    - Realm
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -1016,6 +1021,7 @@ SPEC CHECKSUMS:
   QMUIKit: 5a1a39630f404bd34824d0769ffac9531744602c
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  Realm: e125f464884cda953ebefe70c671b75b03b81b9b
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
@@ -1026,6 +1032,6 @@ SPEC CHECKSUMS:
   SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
   ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
 
-PODFILE CHECKSUM: 8977e9c00fe487a797919301ddbf5add31730f66
+PODFILE CHECKSUM: d5819881123dc15185fe9bb06a466ee45a9f3da4
 
 COCOAPODS: 1.9.1
