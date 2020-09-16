@@ -1,7 +1,11 @@
 PODS:
   - Alamofire (5.1.0)
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
   - DeviceKit (3.1.0)
   - GPUImage (0.1.7)
+  - Hero (1.5.0)
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
@@ -930,29 +934,65 @@ PODS:
     - QMUIKit/QMUICore
     - QMUIKit/QMUILog
   - QMUIKit/QMUIWeakObjectContainer (4.1.1)
+  - QuickLayout (3.0.0)
   - R.swift (5.1.0):
     - R.swift.Library (~> 5.1.0)
   - R.swift.Library (5.1.0)
-  - Realm (4.4.0):
-    - Realm/Headers (= 4.4.0)
-  - Realm/Headers (4.4.0)
+  - Realm (5.4.0):
+    - Realm/Headers (= 5.4.0)
+  - Realm/Headers (5.4.0)
+  - RealmSwift (5.4.0):
+    - Realm (= 5.4.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
   - Siren (5.4.0)
   - SnapKit (5.0.1)
   - SVProgressHUD (2.2.5)
+  - SwiftEntryKit (1.2.6):
+    - QuickLayout (= 3.0.0)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
+  - SwiftGen (6.3.0)
   - SwiftyJSON (5.0.0)
   - SwiftyStoreKit (0.15.0)
   - ViewAnimator (2.7.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Charts
   - DeviceKit
   - GPUImage
+  - Hero
   - IGListKit
   - Kingfisher
   - LoadingShimmer
@@ -961,12 +1001,16 @@ DEPENDENCIES:
   - Moya
   - QMUIKit
   - R.swift
-  - Realm
+  - RealmSwift
   - RxCocoa
   - RxSwift
+  - SDWebImage
   - Siren
   - SnapKit
   - SVProgressHUD
+  - SwiftEntryKit
+  - SwifterSwift
+  - SwiftGen
   - SwiftyJSON
   - SwiftyStoreKit
   - ViewAnimator
@@ -974,8 +1018,10 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Charts
     - DeviceKit
     - GPUImage
+    - Hero
     - IGListDiffKit
     - IGListKit
     - Kingfisher
@@ -989,23 +1035,31 @@ SPEC REPOS:
     - MotionInterchange
     - Moya
     - QMUIKit
+    - QuickLayout
     - R.swift
     - R.swift.Library
     - Realm
+    - RealmSwift
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SDWebImage
     - Siren
     - SnapKit
     - SVProgressHUD
+    - SwiftEntryKit
+    - SwifterSwift
+    - SwiftGen
     - SwiftyJSON
     - SwiftyStoreKit
     - ViewAnimator
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
   DeviceKit: b9a28acbad6b8dbccf456814b6f95bef17a6654f
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   Kingfisher: d2b3d6a7200c93b34de9afcdf25c8dd9282ec277
@@ -1019,19 +1073,25 @@ SPEC CHECKSUMS:
   MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   QMUIKit: 5a1a39630f404bd34824d0769ffac9531744602c
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
-  Realm: e125f464884cda953ebefe70c671b75b03b81b9b
+  Realm: 8949757d76e2451a53d727954c607e49c2542b77
+  RealmSwift: 0b7d7121e842724188123c6086831ae6d2952050
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
   Siren: 9df16ed5278cfaad7ea034f3d2206e4f6983e9b8
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftEntryKit: 96a2fa90b2631bbbfac50d18449e9ca3d0635f13
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  SwiftGen: 3d5024a47ea79e408cded20763d7a17d18a4548c
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
   ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
 
-PODFILE CHECKSUM: d5819881123dc15185fe9bb06a466ee45a9f3da4
+PODFILE CHECKSUM: a725f94cdf37df70454ac47a428478a42412750f
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

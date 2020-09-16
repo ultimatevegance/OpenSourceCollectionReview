@@ -25,5 +25,11 @@ target 'OpenSourceCollectionReview' do
 	pod 'Siren'
 	pod 'QMUIKit'
 	pod 'GPUImage'
-	pod 'Realm'
+	pod 'Charts'
+	pod 'SDWebImage'
+	pod 'Hero'
+	pod 'SwifterSwift'
+	pod 'RealmSwift'
+	pod 'SwiftGen'
+	pod 'SwiftEntryKit'
 end
